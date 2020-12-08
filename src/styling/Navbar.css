@@ -1,0 +1,28 @@
+@font-face {
+    font-family: "NerkoOne";
+    src: local("NerkoOne"),
+      url("../fonts/NerkoOne-Regular.ttf") format("truetype");
+    font-weight: normal;
+}
+
+p {
+    font-size: 25px;
+    text-align: center;
+    border-width: 1px;
+    border-color: black;
+    border-style: solid;
+    font-family: NerkoOne;
+    padding: 5px;
+    flex-grow: 1;
+    cursor: pointer;
+}
+
+#navbar-container {
+    width: 100vw;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: #6cbeed;
+}

@@ -1,0 +1,23 @@
+/* Palette https://coolors.co/d4dfed-274060-ffe1c2-ffad5c-c8e7f9-6cbeed */
+@font-face {
+    font-family: "NerkoOne";
+    src: local("NerkoOne"),
+      url("../fonts/NerkoOne-Regular.ttf") format("truetype");
+    font-weight: normal;
+}
+
+h1 {
+    font-family: NerkoOne;
+    font-size: 75px;
+    text-align: center;
+}
+
+#container-landing {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffebd6;
+}
