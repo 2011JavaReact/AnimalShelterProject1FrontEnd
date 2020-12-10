@@ -1,5 +1,7 @@
 import './App.css'
-import { useState } from "react"
+import { useState, useEffect } from "react"
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import axios from "axios";
 import Navbar from "./components/Navbar"
 import LandingPage from "./components/LandingPage"
 import ViewAnimals from "./components/ViewAnimals"
@@ -8,17 +10,30 @@ import Login from "./components/Login"
 
 function App() {
 
-  const [ display, setDisplay ] = useState("home")
+  const [ animals, setAnimals ] = useState([])
+
+  const getURL = "https://pokeapi.co/api/v2/pokemon/sentret"
+  // const getURL = "http://3.128.180.190:8080/animalshelter/animals/"
+
+  useEffect(() => {
+    console.log(animals.name)
+    axios.get(getURL)
+      .then(response => {
+        setAnimals([...animals, response.data])
+      })
+  },[])
 
   return (
     <div className="App">
-      <Navbar setDisplay={setDisplay}/>
-      {{
-        "home": <LandingPage />,
-        "view": <ViewAnimals />,
-        "manage": <ManageAnimals />,
-        "login": <Login />
-      }[display]}
+      <Router>
+        <Navbar />
+        <Switch>
+          <Route exact path="/"><LandingPage /></Route>
+          <Route path="/view-animals"><ViewAnimals animals={animals} /></Route>
+          <Route path="/manage-animals"><ManageAnimals /></Route>
+          <Route path="/log"><Login /></Route>
+        </Switch>
+      </Router>
     </div>
   );
 }

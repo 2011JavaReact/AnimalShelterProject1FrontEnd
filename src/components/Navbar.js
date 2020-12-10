@@ -1,13 +1,14 @@
 import '../fonts/NerkoOne-Regular.ttf'; 
 import "../styling/Navbar.css";
+import { Link } from "react-router-dom";
 
-const Navbar = ({ setDisplay }) => {
+const Navbar = () => {
     return (
         <div id="navbar-container">
-            <p onClick={() => setDisplay("home")}>Home</p>
-            <p onClick={() => setDisplay("view")}>View Animals</p>
-            <p onClick={() => setDisplay("manage")}>Manage Animals</p>
-            <p onClick={() => setDisplay("login")}>Log In</p>
+            <Link to="/" className="router-links">Home</Link>
+            <Link to="/view-animals" className="router-links">View Animals</Link>
+            <Link to="/manage-animals" className="router-links">Manage Animals</Link>
+            <Link to="/log" className="router-links">Log In</Link>
         </div>
     )
 }
