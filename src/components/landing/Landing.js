@@ -1,7 +1,7 @@
-import '../fonts/NerkoOne-Regular.ttf'; 
-import "../styling/LandingPage.css";
+import '../../fonts/NerkoOne-Regular.ttf'; 
+import "../../styling/Landing.css";
 
-const LandingPage = () => {
+const Landing = () => {
 
     return (
         <div id="container-landing">
@@ -11,4 +11,4 @@ const LandingPage = () => {
     )
 }
 
-export default LandingPage
+export default Landing
