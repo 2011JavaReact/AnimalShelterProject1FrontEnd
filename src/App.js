@@ -12,8 +12,7 @@ function App() {
 
   const [ animals, setAnimals ] = useState([])
 
-  const getURL = "https://pokeapi.co/api/v2/pokemon/sentret"
-  // const getURL = "http://3.128.180.190:8080/animalshelter/animals/"
+  const getURL = "http://3.128.180.190:8080/animalshelter/animals/"
 
   useEffect(() => {
     console.log(animals.name)
