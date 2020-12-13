@@ -10,6 +10,8 @@ h1 {
     font-family: NerkoOne;
     font-size: 75px;
     text-align: center;
+    margin-top: 50px;
+    margin-bottom: 10px;
 }
 
 #container-view-animals {
@@ -17,7 +19,16 @@ h1 {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     background-color: #ffebd6;
+}
+
+#container-animals {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
 }

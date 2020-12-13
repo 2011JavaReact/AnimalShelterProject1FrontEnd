@@ -5,7 +5,7 @@ import axios from "axios";
 import Navbar from "./components/Navbar"
 import Landing from "./components/landing/Landing"
 import ViewAnimals from "./components/view/ViewAnimals"
-import ManageAnimals from "./components/ManageAnimals"
+import ManageAnimals from "./components/manage/ManageAnimals"
 import Login from "./components/Login"
 
 function App() {
@@ -28,8 +28,8 @@ function App() {
         <Switch>
           <Route exact path="/"><Landing /></Route>
           <Route path="/view-animals"><ViewAnimals animals={animals} /></Route>
-          <Route path="/manage-animals"><ManageAnimals /></Route>
-          <Route path="/log"><Login /></Route>
+          <Route path="/manage-animals"><ManageAnimals animals={animals} setAnimals={setAnimals} /></Route>
+          <Route path="/login"><Login /></Route>
         </Switch>
       </Router>
     </div>

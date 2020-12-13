@@ -1,0 +1,39 @@
+/* Palette https://coolors.co/d4dfed-274060-ffe1c2-ffad5c-c8e7f9-6cbeed */
+@font-face {
+    font-family: "NerkoOne";
+    src: local("NerkoOne"),
+      url("../fonts/NerkoOne-Regular.ttf") format("truetype");
+    font-weight: normal;
+}   
+
+h2 {
+    font-family: NerkoOne;
+    font-size: 25px;
+    text-align: start;
+    margin: 3px;
+    display: flex;
+}
+
+h2 input, textarea, button {
+    margin: 3px;
+    background-color: #fff5eb;
+}
+
+
+#container-new-animal {
+    width: 400px;
+    height: min-content;
+    display: flex;
+    border: 3px solid black;
+    margin: 3px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #ffebd6;
+    overflow-wrap: break-word;
+}
+
+button {
+    align-self: center;
+    margin: 3px;
+}
