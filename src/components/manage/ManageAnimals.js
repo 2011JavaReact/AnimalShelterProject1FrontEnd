@@ -2,6 +2,7 @@ import '../../fonts/NerkoOne-Regular.ttf';
 import "../../styling/ManageAnimals.css";
 import { useState, useEffect, useRef } from "react";
 import NewAnimalForm from "./NewAnimalForm"
+import AnimalIndex from "./AnimalIndex";
 import axios from "axios"
 
 const ManageAnimals = ({ animals, setAnimals }) => {
@@ -31,8 +32,8 @@ const ManageAnimals = ({ animals, setAnimals }) => {
         <div id="container-manage-animals">
             <h1>Add an Animal</h1>
             <NewAnimalForm setNewAnimal={setNewAnimal}/>
-            <h1>Update an Animal</h1>
-            <h1>Delete an Animal</h1>
+            <h1>Update or Delete an Animal</h1>
+            <AnimalIndex animals={animals} setAnimals={setAnimals}/>
         </div>
     )
 }
