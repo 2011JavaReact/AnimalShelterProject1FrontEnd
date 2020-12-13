@@ -21,7 +21,7 @@
 
 #navbar-container {
     width: 100vw;
-    position: absolute;
+    position: fixed;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
