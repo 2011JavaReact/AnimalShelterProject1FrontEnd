@@ -19,7 +19,6 @@ const ManageAnimals = ({ animals, setAnimals }) => {
          } else {
             axios.post("http://3.128.180.190:8080/animalshelter/animal", newAnimal)
             .then(response => {
-                console.log(response.data);
                 setAnimals([...animals, response.data])
             })
             .catch(error => {

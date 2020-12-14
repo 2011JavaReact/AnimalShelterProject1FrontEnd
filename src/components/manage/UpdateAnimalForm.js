@@ -32,8 +32,7 @@ const UpdateAnimalForm = ({ animal, animals, setAnimals }) => {
         ].sort((a, b) => a.animalId > b.animalId ? 1 : -1) //keeps list in order of ID
 
         const URL = `http://3.128.180.190:8080/animalshelter/animal/${animal.animalId}`
-        // CORS!!
-        axios.put(URL, {
+        const putAnimal = {
             "animalName": name,
             "species": species,
             "breed": breed,
@@ -42,7 +41,13 @@ const UpdateAnimalForm = ({ animal, animals, setAnimals }) => {
             "animalAge": age,
             "weight": weight,
             "temperament": temperament
-        })
+        }
+
+        console.log("PUT to: ", URL)
+        console.log("PUTing: ", putAnimal)
+
+        // CORS!!
+        axios.put(URL, putAnimal)
             .then(() => {
                 setAnimals(updatedAnimals)
             })

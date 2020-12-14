@@ -3,7 +3,6 @@ import "../../styling/ViewAnimals.css";
 import Animal from "./Animal"
 
 const ViewAnimals = ({ animals }) => {
-    console.log(animals)
     return (
         <div id="container-view-animals">
             <h1>Here are our cuddly friends!</h1>
