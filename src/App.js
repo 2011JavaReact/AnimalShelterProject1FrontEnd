@@ -29,7 +29,7 @@ function App() {
         <Switch>
           <Route exact path="/"><Landing /></Route>
           <Route path="/view-animals"><ViewAnimals animals={animals} /></Route>
-          <Route path="/manage-animals"><ManageAnimals animals={animals} setAnimals={setAnimals} /></Route>
+          <Route path="/manage-animals"><ManageAnimals animals={animals} setAnimals={setAnimals} user={user}/></Route>
           <Route path="/login"><Login user={user} setUser={setUser} /></Route>
         </Switch>
       </Router>

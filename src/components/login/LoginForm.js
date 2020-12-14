@@ -32,7 +32,6 @@ const LoginForm = ({ user, setUser }) => {
 
     return (
         <div id="login-form">
-            {console.log(user)}
             <h2>Username: <input value={username} onChange={(event) => setUsername(event.target.value)}/></h2>
             <h2>Password: <input type="password" value={password} onChange={(event) => setPassword(event.target.value)} /></h2>
             <button onClick={() => loginUser()}>LOGIN</button>

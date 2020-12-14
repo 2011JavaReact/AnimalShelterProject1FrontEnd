@@ -5,7 +5,7 @@ import NewAnimalForm from "./NewAnimalForm"
 import AnimalIndex from "./AnimalIndex";
 import axios from "axios"
 
-const ManageAnimals = ({ animals, setAnimals }) => {
+const ManageAnimals = ({ animals, setAnimals, user }) => {
 
     const [ newAnimal, setNewAnimal ] = useState({})
 
@@ -28,12 +28,19 @@ const ManageAnimals = ({ animals, setAnimals }) => {
     }, [newAnimal])    
 
     return (
-        <div id="container-manage-animals">
-            <h1>Add an Animal</h1>
-            <NewAnimalForm setNewAnimal={setNewAnimal}/>
-            <h1>Update or Adopt an Animal</h1>
-            <AnimalIndex animals={animals} setAnimals={setAnimals}/>
+        <div id="login-check">
+            {
+                user === ""
+                    ? <h1>Please login to manage animals!</h1>
+                    : <div id="container-manage-animals">
+                        <h1>Add an Animal</h1>
+                        <NewAnimalForm setNewAnimal={setNewAnimal}/>
+                        <h1>Update or Adopt an Animal</h1>
+                        <AnimalIndex animals={animals} setAnimals={setAnimals}/>
+                    </div>
+            }
         </div>
+        
     )
 }
 
