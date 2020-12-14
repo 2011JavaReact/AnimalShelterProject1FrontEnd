@@ -1,9 +1,11 @@
 import '../../fonts/NerkoOne-Regular.ttf'; 
 import "../../styling/Animal.css";
 
-const Animal = ({ animal }) => {
+const Animal = ({ animal, picture }) => {
+
     return (
         <div id="container-animal">
+            <img src={picture} width={200} height={200}/>
             <h2>ID: {animal.animalId}</h2>
             <h2>Name: {animal.animalName}</h2>
             <h2>Age: {animal.animalAge}</h2>

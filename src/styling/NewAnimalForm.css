@@ -29,11 +29,19 @@ h2 input, textarea, button {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    background-color: #ffebd6;
     overflow-wrap: break-word;
+    background-color: #C8E7F9;
+    border-color: #6CBEED;
+    border-style: dotted;
+    border-width: 3px;
+    border-radius: 5px;
 }
 
 button {
     align-self: center;
     margin: 3px;
+}
+
+#container-new-animal h2 {
+    background-color: #C8E7F9;
 }
