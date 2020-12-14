@@ -3,6 +3,7 @@ Welcome to the Fur Haven Animal Shelter! We are a no-kill shelter, and hope you 
 
 # Hosted
 Hosted at: http://revature-karl-fur-haven-animal-shelter.s3-website-us-west-1.amazonaws.com/
+Project 0 API: https://github.com/2011JavaReact/AndrewCappProject0AnimalShelter
 
 # Guide
 At the top of the screen is a navigation bar with four options: Home, View Animals, Manage Animals, and User Accounts
@@ -41,3 +42,28 @@ Two form are provided here, one for signing up, and a second for logging in. Sig
 And logging in will require:
 - Username
 - Password
+
+# Installation
+```
+git clone https://github.com/2011JavaReact/AnimalShelterProject1FrontEnd
+npm install
+npm start
+```
+Project was built in React, so ```npm install``` will be needed before much of anything can be done with the project locally.
+
+# Technology Stack
+## Front End
+- JavaScript
+- React
+- HTML
+- CSS
+- AWS/S3
+## Back End
+- Java
+- PostgreSQL
+- Apache Tomcat
+- Log4j
+- Maven
+- Jenkins
+- AWS/EC2
+- AWS/RDS
