@@ -33,7 +33,7 @@ const AnimalIndex = ({ animals, setAnimals }) => {
                                         .catch(error => {
                                             console.error('There was an error!', error);
                                         });
-                                }}>DELETE</button>
+                                }}>ADOPTED</button>
 
                             </div>
                         </span>

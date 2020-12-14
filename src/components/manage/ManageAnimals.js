@@ -31,7 +31,7 @@ const ManageAnimals = ({ animals, setAnimals }) => {
         <div id="container-manage-animals">
             <h1>Add an Animal</h1>
             <NewAnimalForm setNewAnimal={setNewAnimal}/>
-            <h1>Update or Delete an Animal</h1>
+            <h1>Update or Adopt an Animal</h1>
             <AnimalIndex animals={animals} setAnimals={setAnimals}/>
         </div>
     )
